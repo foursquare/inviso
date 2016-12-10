@@ -13,8 +13,7 @@
                 "enabled": true
             },
             "_timestamp": {
-                "enabled": true,
-                "store": true
+                "enabled": true
             },
             "_ttl": {
                 "default": "30d",
@@ -23,15 +22,14 @@
         },
         "applications": {
             "_timestamp": {
-                "enabled": true,
-                "store": true
+                "enabled": true
             },
             "properties": {
                 "cluster": {
                     "index": "not_analyzed",
                     "type": "string"
                 },
-                "cluster.id": {
+                "cluster_id": {
                     "index": "not_analyzed",
                     "type": "string"
                 },
@@ -43,15 +41,14 @@
         },
         "metrics": {
             "_timestamp": {
-                "enabled": true,
-                "store": true
+                "enabled": true
             },
             "properties": {
                 "cluster": {
                     "index": "not_analyzed",
                     "type": "string"
                 },
-                "cluster.id": {
+                "cluster_id": {
                     "index": "not_analyzed",
                     "type": "string"
                 }
@@ -59,15 +56,14 @@
         },
         "scheduler": {
             "_timestamp": {
-                "enabled": true,
-                "store": true
+                "enabled": true
             },
             "properties": {
                 "cluster": {
                     "index": "not_analyzed",
                     "type": "string"
                 },
-                "cluster.id": {
+                "cluster_id": {
                     "index": "not_analyzed",
                     "type": "string"
                 }

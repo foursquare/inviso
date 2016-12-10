@@ -13,8 +13,9 @@
         "enabled": true
       },
       "_timestamp" : {
-        "enabled" : true,
-        "store" : true
+          "type" : "date",
+          "format" : "epoch_millis",
+          "enabled" : true
       },
       "_ttl" : {
         "enabled" : true,
@@ -23,30 +24,44 @@
     },
     "tracking" : {
       "_timestamp" : {
-        "enabled" : true,
-        "store" : true
+          "type" : "date",
+          "format" : "epoch_millis",
+          "enabled" : true
       }
     },
     "config" : {
       "_timestamp" : {
-        "enabled" : true,
-        "store" : true
+          "type" : "date",
+          "format" : "epoch_millis",
+          "enabled" : true
       },
       "properties" : {
-        "dataoven.job.id" : {
+          "epoch" : {
+              "type" : "date",
+              "format" : "epoch_millis"
+          },
+          "mapred_job_start" : {
+              "type" : "date",
+              "format" : "epoch_millis"
+          },
+          "mapred_job_stop" : {
+              "type" : "date",
+              "format" : "epoch_millis"
+          },
+        "dataoven_job_id" : {
           "type" : "string",
           "index": "not_analyzed"
         },
-        "genie.job.id" : {
+        "genie_job_id" : {
           "type" : "string",
           "store" : "no",
           "index" : "not_analyzed"
         },
-        "hive.query.id" : {
+        "hive_query_id" : {
           "type" : "string",
           "index" : "not_analyzed"
         },
-        "pig.script.id" : {
+        "pig_script_id" : {
           "type" : "string",
           "index" : "not_analyzed"
         }
